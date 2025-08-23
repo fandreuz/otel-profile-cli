@@ -7,7 +7,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "otel-profile",
+	Use:   "otel-profile-cli",
 	Short: "Simple CLI to work with OTEL profile data",
 }
 

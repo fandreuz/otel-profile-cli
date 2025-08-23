@@ -1,4 +1,4 @@
-module github.com/fandreuz/otel-profile
+module github.com/fandreuz/otel-profile-cli
 
 go 1.24.5
 
