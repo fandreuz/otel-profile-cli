@@ -2,7 +2,7 @@
 
 ## Getting started
 
-```bash
+```
 $ go install github.com/fandreuz/otel-profile-cli@latest
 $ otel-profile-cli --help
 Simple CLI to work with OTEL profile data
@@ -12,10 +12,10 @@ Usage:
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
-  export      Export the given profile with a gRPC request to the given endpoint
+  export      Export a profile with a gRPC request
   help        Help about any command
   server      Start a gRPC server waiting for OTEL profile data
-  show        Show the content of [file]
+  show        Pretty-print the content of a profile
 
 Flags:
   -h, --help   help for otel-profile-cli

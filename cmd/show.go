@@ -28,7 +28,7 @@ func PrettyPrint(pb proto.Message) {
 var showCmd = &cobra.Command{
 	Use:   "show [file]",
 	Args:  cobra.ExactArgs(1),
-	Short: "Show the content of [file]",
+	Short: "Pretty-print the content of a profile",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		file, err := os.ReadFile(args[0])
 		if err != nil {

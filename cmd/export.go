@@ -19,7 +19,7 @@ import (
 var exportCmd = &cobra.Command{
 	Use:   "export [file] [endpoint]",
 	Args:  cobra.ExactArgs(2),
-	Short: "Export the given profile with a gRPC request to the given endpoint",
+	Short: "Export a profile with a gRPC request",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		file, err := os.ReadFile(args[0])
 		if err != nil {
