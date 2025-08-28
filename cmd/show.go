@@ -13,7 +13,7 @@ import (
 
 var indent string
 
-func prettyPrint(pb proto.Message) {
+func PrettyPrint(pb proto.Message) {
 	out, err := prototext.MarshalOptions{
 		Multiline: true,
 		Indent:    indent,
@@ -39,7 +39,7 @@ var showCmd = &cobra.Command{
 		if err := proto.Unmarshal(file, &profilesData); err != nil {
 			return err
 		}
-		prettyPrint(&profilesData)
+		PrettyPrint(&profilesData)
 
 		return nil
 	},
